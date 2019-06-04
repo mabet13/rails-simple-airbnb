@@ -1,0 +1,21 @@
+
+.container {
+  margin: 0 auto;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.card-product {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  height: 120px;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+}

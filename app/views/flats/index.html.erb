@@ -1,0 +1,22 @@
+
+<div class="container">
+  <div class="cards">
+    <% @flats.each do |flat| %>
+    <div class="card-product">
+      <div>
+        <%= link_to flat.name, flat_path(flat) %>
+      </div>
+      <div><small><%= link_to "delete", flat_path(flat),
+        method: :delete,
+        data: { confirm: "Are you sure?" } %></small>
+      </div>
+      <div>
+        <%= flat.address %>
+      </div>
+    </div>
+    <% end %>
+  </div>
+  </div>
+<br>
+<br>
+<%= link_to "Add new flat", new_flat_path %>

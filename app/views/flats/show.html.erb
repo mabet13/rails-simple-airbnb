@@ -1,0 +1,15 @@
+<h4>Details</h4>
+<div class="box">
+  <h2><%= @flat.name %><br></h2>
+  Address:
+  <%= @flat.address %><br>
+  Description:
+  <%= @flat.description %><br>
+  Price per night:
+  <%= @flat.price_per_night %><br>
+  Number of guests:
+  <%= @flat.number_of_guests%><br>
+</div>
+<br>
+<br>
+<%= link_to "Update flat", edit_flat_path %>
